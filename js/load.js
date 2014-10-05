@@ -10,7 +10,9 @@ window.addEventListener("load", function () {
     Modernizr.load([
         {
                 load : [
-                    "vendor/jquery/dist/jquery.min.js",
+                    "vendor/jquery/jquery.min.js",
+                    "vendor/jquery-mobile/js/jquery.mobile.js",
+                    "vendor/jquery-mobile/js/jquery.mobile.events.js",
                     "vendor/sizzle/dist/sizzle.min.js",
                     "js/game.js"
                 ],
