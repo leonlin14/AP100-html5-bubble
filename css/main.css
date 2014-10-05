@@ -301,13 +301,13 @@ textarea {
 }
 
 #game {
-    width: 640px;
-    height: 480px;
+    width: 320px;
+    height: 240px;
     background-color: #808080;
 }
 
 #draw {
-    width: 640px;
-    height: 480px;
+    width: 320px;
+    height: 240px;
     background-color: #808080;
 }
