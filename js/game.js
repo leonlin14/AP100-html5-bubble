@@ -68,8 +68,7 @@
         }
     }
 
-
-    $(document).ready(function () {
-        setInterval(function () { start() }, 3000);  
-    });
+    return (
+        gameStrat: start
+    )
 }) ();
