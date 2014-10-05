@@ -5,7 +5,7 @@
 * Time: 02:36 AM
 * To change this template use Tools | Templates.
 */
-(function() {
+var gameModule = (function() {
     var ballX = 100
       , ballY = 100
       , ballR = 50;
@@ -54,9 +54,9 @@
 
         // 四個角
         x1 = ballX - ballR;
-        x2 = ballX + ballR;
+        x2 = ballX + ballR;		
         y1 = ballY - ballR;
-        y2 = ballY + ballR;
+        y2 = ballY + ballR;	
 
         // 是否擊中
         if ((evt.clientX > x1) && (evt.clientX < x2)) {
@@ -67,8 +67,8 @@
             }
         }
     }
-
-    return (
-        gameStrat: start
-    )
+    
+    return {
+        gameStart: start
+    }
 }) ();
