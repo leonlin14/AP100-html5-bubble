@@ -38,8 +38,9 @@ var gameModule = (function() {
         ctx.arc(ballX, ballY, ballR, 0, Math.PI * 2, true);
         ctx.fill();
 
-        document.getElementById("game")
-                .addEventListener("click", touchEvent, false);
+        $("#game").on('click', function(event) {
+            touchEvent(event);
+        });
 
         console.log('Start Game');
     }

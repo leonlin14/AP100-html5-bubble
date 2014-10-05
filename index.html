@@ -21,11 +21,14 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div id="header">
-        </div>
+        <div data-role="page">
+            <div id="header" data-role="header"></div>
         
-        <div id="game">
-            <canvas id="draw"></canvas>
+            <div id="game" role="main" class="ui-content">
+                <canvas id="draw"></canvas>
+            </div>
+        
+            <div data-role="footer"></div>
         </div>
 
         <script src="js/modernizr.min.js"></script>

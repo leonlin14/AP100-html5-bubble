@@ -11,10 +11,9 @@ window.addEventListener("load", function () {
         {
                 load : [
                     "vendor/jquery/jquery.min.js",
-                    "vendor/jquery-mobile/js/jquery.mobile.js",
-                    "vendor/jquery-mobile/js/jquery.mobile.events.js",
-                    "vendor/sizzle/dist/sizzle.min.js",
-                    "js/game.js"
+                    "vendor/sizzle/dist/sizzle.js",
+                    "vendor/distrib-jquery-mobile/js/jquery.mobile.js",
+                    "js/game.js?v=1.1"
                 ],
                 complete : function() {
                     setInterval(function () { gameModule.gameStart() }, 1000);  
