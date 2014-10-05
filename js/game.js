@@ -7,8 +7,9 @@
 */
 function start() {
     var canvas = document.getElementById("draw");
+
     var ctx = canvas.getContext("2d");
-    
+
     var background = Sizzle('#game')[0],
         rect = background.getBoundingClientRect();
 
@@ -23,7 +24,7 @@ function start() {
     ballY = Math.floor(Math.random() * maxHeight);
     ballR = Math.floor(Math.random() * maxR) + 30;
 
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'black';
     ctx.beginPath();
     ctx.arc(ballX, ballY, ballR, 0, Math.PI * 2, true);
     ctx.fill();
@@ -34,4 +35,5 @@ function start() {
     console.log('Start Game');
 }
 
-start();
+
+setInterval(function () { start() }, 1000);
