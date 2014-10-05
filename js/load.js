@@ -12,10 +12,10 @@ window.addEventListener("load", function () {
                 load : [
                     "vendor/jquery/dist/jquery.min.js",
                     "vendor/sizzle/dist/sizzle.min.js",
-                    "js/game.js?v1.0"
+                    "js/game.js"
                 ],
                 complete : function() {
-                    setInterval(function () { gameModule.gameStart() }, 3000);  
+                    setInterval(function () { gameModule.gameStart() }, 1000);  
                 }
         }
     ]);
